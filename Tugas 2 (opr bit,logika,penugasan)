@@ -1,0 +1,52 @@
+public class BitwiseOperations {
+
+    public static void main(String[] args) {
+        int number = 10; // 1010 dalam biner
+        int bitPosition = 2; // Posisi bit yang ingin diatur (dimulai dari 0)
+
+        // Membuat bitmask dengan bit yang ingin diatur ke 1
+        int bitMask = 1 << bitPosition; // 0100 dalam biner
+
+        // Melakukan operasi OR bitwise untuk mengatur bit
+        int newNumber = number | bitMask; // 1110 dalam biner
+
+        System.out.println("Bilangan awal: " + number);
+        System.out.println("Bilangan baru: " + newNumber);
+    }
+}
+
+public class Counter {
+
+    public static void main(String[] args) {
+        // Deklarasi variabel
+        int counter = 0;
+
+        // Menampilkan nilai awal counter
+        System.out.println("Nilai counter awal: " + counter);
+
+        // Menambahkan nilai counter
+        counter += 5;
+
+        // Menampilkan nilai counter setelah ditambah
+        System.out.println("Nilai counter setelah ditambah: " + counter);
+    }
+}
+
+public class CekKelulusan {
+
+    public static void main(String[] args) {
+        // Deklarasi variabel
+        int nilaiUjian = 75;
+        int nilaiTugas = 80;
+
+        // Cek kelulusan
+        boolean lulus = nilaiUjian >= 70 && nilaiTugas >= 70;
+
+        // Menampilkan hasil
+        if (lulus) {
+            System.out.println("Selamat, Anda Lulus!");
+        } else {
+            System.out.println("Maaf, Anda Belum Lulus.");
+        }
+    }
+}
